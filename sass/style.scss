@@ -1,0 +1,183 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+$heightPk-sm: 100%;
+
+// Project Start Date: 25/11/2021 - version 1.0
+// Technology: HTML CSS SCSS
+// COMPONENTS
+// ------------------HEADER-------------------
+// - Logo
+// - Navigation top
+// - Menu Right Sidebar
+
+@import "header.scss";
+// ------------------THE END------------------
+
+// ------------------SLIDER-------------------
+// - Image slider
+// - Name Destination
+// - Area address
+// - day
+
+.slider {
+	background-color: rgba(101, 100, 96, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 320px;
+	width: 100%;
+
+	&__img {
+		object-fit: cover;
+	}
+
+	&__nd {
+		position: absolute;
+		left: 6%;
+		bottom: 14%;
+		.slider__heading {
+			@include fullSize(3.5rem, bold, 0, 3.5rem);
+			color: $textColorHeader;
+			z-index: 2;
+			position: relative;
+		}
+	}
+
+	&__overplay {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.15);
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+// ------------------THE END-------------------
+
+// ------------------CONTAINER-----------------
+// - Infor section
+// - image and contact
+// - Description and map, photos, program
+// - Best packages
+// - Search
+// - Image focus view Destination
+// - Tag
+// - Open and close, and comments of tourist
+// - Related packages
+
+.container {
+	padding: 50px 0 500px;
+
+	&__shopMain {
+		padding-bottom: 8px;
+
+		img {
+			@include widthHeight(100%);
+			object-fit: cover;
+			cursor: pointer;
+		}
+	}
+
+	&__listShop {
+		.row {
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+
+		.col {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+	&__itemsShop {
+		@include widthHeight(100%);
+
+		img {
+			@include widthHeight(100%);
+			object-fit: cover;
+			cursor: pointer;
+		}
+	}
+
+	&__title {
+		h3 {
+			@include fullSize(3rem, normal, 1px, 3rem);
+			color: #555555;
+			margin-bottom: 15px;
+		}
+
+		ul {
+			list-style: none;
+			display: flex;
+
+			li {
+				font-size: 1.5rem;
+				padding: 0 2px;
+				color: #a3a3a3;
+			}
+		}
+	}
+
+	&__price {
+		@include fullSize(3rem, normal, 1px, 3rem);
+		color: #9a9a9a;
+		margin-top: 15px;
+	}
+
+	&__content {
+		margin: 10px 0;
+		p {
+			margin: 15px 0;
+			@include fullSize(1.4rem, normal, 1px, 2.7rem);
+			color: #9a9a9a;
+		}
+	}
+
+	&__people {
+		display: flex;
+		align-items: center;
+		margin: 30px 0 30px 0;
+		label {
+			@include fullSize(1.5rem, normal, 1px, normal);
+			margin-right: 25px;
+			text-transform: uppercase;
+			color: white;
+			padding: 8px;
+			border-radius: 10px 0 10px 0;
+			background-color: rgb(61, 172, 94);
+		}
+
+		select {
+			flex: 1;
+			padding: 10px 20px 10px 20px;
+			border-radius: 25px;
+			background-color: #F9F9F9;
+			color: black;
+			font-size: 1.5rem;
+			border: 1px solid #a9a6a6;
+			margin-right: 25px;
+			cursor: pointer;
+		}
+
+		input {
+			padding: 12px 8px;
+			@include fullSize(1.5rem, normal, 1px, 1.5rem);
+			color: white;
+			background-color: #f76570;
+			cursor: pointer;
+		}
+	}
+
+	&__priceFor {
+		@include fullSize(3rem, normal, 1px, 3rem);
+		color: #9a9a9a;
+		margin-bottom: 20px;
+	}
+}
+
+// -----------------The end container-----------------
+// ----------------Footer ----------------------------
+@import "footer.scss";
