@@ -540,7 +540,7 @@
 }
 
 .container {
-  padding: 50px 0 500px;
+  padding: 50px 0 0px;
 }
 .container__shopMain {
   padding-bottom: 8px;
@@ -626,10 +626,10 @@
   flex: 1;
   padding: 10px 20px 10px 20px;
   border-radius: 25px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
+  border: 1px solid #f7f1f1;
   color: black;
   font-size: 1.5rem;
-  border: 1px solid #a9a6a6;
   margin-right: 25px;
   cursor: pointer;
 }
@@ -649,7 +649,255 @@
   letter-spacing: 1px;
   line-height: 3rem;
   color: #9a9a9a;
+  margin: 0 0 30px 20px;
+  position: relative;
+}
+.container__priceFor span::before {
+  position: absolute;
+  content: "$";
+  top: -33%;
+  left: -4%;
+  font-size: 2rem;
+}
+.container__cart {
+  margin-bottom: 30px;
+}
+.container__cart input {
+  text-align: center;
+  padding: 4px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #f7f1f1;
+  color: black;
+  border-radius: 25px;
+  width: 100px;
+  margin-right: 20px;
+  font-size: 1.6rem;
+}
+.container__cart button {
+  padding: 4px 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 2.7rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #1bbc9b;
+}
+.container__subTitle {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #555555;
+}
+.container__subTitle li {
+  padding: 5px 0;
+}
+.container__subTitle a {
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 1;
+  line-height: 1.3rem;
+  color: #9a9a9a;
+  margin-left: 5px;
+  border: 1px solid #f1f1f1;
+  padding: 5px 5px;
+}
+.container__nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.container__nav nav {
+  display: flex;
   margin-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.container__nav input[type=radio] {
+  display: none;
+}
+.container__nav label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  font-size: 1.7rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  padding: 20px 24px;
+  color: #555555;
+  text-align: center;
+}
+.container__nav #Description:checked ~ nav label.Description,
+.container__nav #information:checked ~ nav label.information,
+.container__nav #Reviews:checked ~ nav label.Reviews {
+  border-bottom: 1px solid #1bbc9b;
+}
+.container__nav section .content {
+  display: none;
+  background: #fff;
+}
+.container__nav #Description:checked ~ section .content__description,
+.container__nav #information:checked ~ section .content__information,
+.container__nav #Reviews:checked ~ section .content__review {
+  display: block;
+}
+.container__nav section .content__description h2,
+.container__nav section .content__information h2,
+.container__nav section .content__review h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.container__nav section .content__description p,
+.container__nav section .content__information p,
+.container__nav section .content__review p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+}
+.container__nav section .content__information .content__title {
+  margin-bottom: 20px;
+}
+.container__nav section .content__information table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container__nav section .content__information th,
+.container__nav section .content__information td {
+  border-top: 1px solid #f1f1f1;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.1rem;
+  padding: 15px 20px 15px 20px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.container__nav section .content__information th {
+  color: #0e0101;
+  font-weight: bold;
+  width: 20%;
+}
+.container__nav section .content__information tr {
+  font-style: italic;
+  color: #a3a3a3;
+}
+.container__nav section .content__information tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.container__nav section .content__review .content__person {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.container__nav section .content__review .content__person--img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.container__nav section .content__review .content__person--img img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container__nav section .content__review .content__person--time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__nav section .content__review .content__person--time ul {
+  list-style: none;
+  display: flex;
+}
+.container__nav section .content__review .content__person--time span {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  color: #555555;
+}
+.container__nav section .content__review .content__person--time li {
+  padding: 0 5px;
+  color: #a3a3a3;
+}
+.container__nav section .content__review .content__person--nd {
+  padding-top: 10px;
+}
+.container__nav section .content__review .content__person--nd p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+}
+.container__nav section .content__review .content__addReview {
+  padding: 30px 0;
+}
+.container__nav section .content__review .content__addReview--rating {
+  padding: 10px 0 20px 0;
+}
+.container__nav section .content__review .content__addReview--rating ul {
+  list-style: none;
+  display: flex;
+}
+.container__nav section .content__review .content__addReview--rating ul li {
+  font-size: 1.6rem;
+  padding: 0 2px;
+  color: #a3a3a3;
+}
+.container__nav section .content__review .content__addReview label {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+  text-align: left;
+  padding: 0;
+}
+.container__nav section .content__review .content__addReview textarea,
+.container__nav section .content__review .content__addReview input {
+  padding: 10px 20px 10px 20px;
+  font-size: 1.5rem;
+  border: 1px solid #f1f1f1;
+  color: #555555;
+  border-radius: 40px;
+  background-color: #f9f9f9;
+}
+.container__nav section .content__review .content__addReview input[type=text] {
+  width: 100%;
+}
+.container__nav section .content__review .content__addReview input[type=email] {
+  width: 25%;
+}
+.container__nav section .content__review .content__addReview input[type=checkbox] {
+  display: block;
+  padding: 2px;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid #6e6a6a;
+  margin: 13px 0 13px 5px;
+}
+.container__nav section .content__review .content__addReview button {
+  padding: 8px 16px;
+  background-color: #1bbc9b;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px 0 40px;
 }
 
 .header, .header__navbar, .header__navbar-level1-items, .header__navbar-level2-items {
