@@ -6,6 +6,7 @@
 .footer {
 	position: relative;
 	@include widthHeight(100%, auto);
+    padding-top: 50px;
 
 	&__img {
 		@include widthHeight(100%, auto);
