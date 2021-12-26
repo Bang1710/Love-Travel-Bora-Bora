@@ -1,2 +1,2 @@
-# Pages one of Love Travel web copywrite by VB Nguyễn
-Link visit web page of love travel/ pages Bora Bora Single Product: 
+# 2nd site of Love-Travel Website copywrite by Van Bang Nguyen
+Link visit page site of love travel/ pages Bora Bora Single Product: uncommited ! 

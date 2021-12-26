@@ -640,7 +640,7 @@
                 <div class="grid wide">
                     <div class="row">
                         <!-- List Image -->
-                        <div class="col l-6 m-6">
+                        <div class="col l-6 m-12 c-12 p-40">
                             <div class="container__shopMain">
                                 <label for="shop1">
                                     <img src="./image/shop-0.jpg" alt="Shop Main" class="container__img">
@@ -648,35 +648,35 @@
                             </div>
                             <div class="container__listShop">
                                 <div class="row">
-                                    <div class="col l-2-4">
+                                    <div class="col l-2-4 m-2-4 c-2-4">
                                         <div class="container__itemsShop">
                                             <label for="shop2">
                                                 <img src="./image/shop-1-100x100.jpg" alt="" class="container__img">
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col l-2-4">
+                                    <div class="col l-2-4 m-2-4 c-2-4">
                                         <div class="container__itemsShop">
                                             <label for="shop3">
                                                 <img src="./image/shop-2-100x100.jpg" alt="" class="container__img">
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col l-2-4">
+                                    <div class="col l-2-4 m-2-4 c-2-4">
                                         <div class="container__itemsShop">
                                             <label for="shop4">
                                                 <img src="./image/rsz_1shop-3-100x100.jpg" alt="" class="container__img">
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col l-2-4">
+                                    <div class="col l-2-4 m-2-4 c-2-4">
                                         <div class="container__itemsShop">
                                             <label for="shop5">
                                                 <img src="./image/shop-4-100x100.jpg" alt="" class="container__img">
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col l-2-4">
+                                    <div class="col l-2-4 m-2-4 c-2-4">
                                         <div class="container__itemsShop">
                                             <label for="shop6">
                                                 <img src="./image/shop-5-100x100.jpg" alt="" class="container__img">
@@ -688,7 +688,7 @@
                         </div>
     
                         <!-- Content -->
-                        <div class="col l-6 m-6">
+                        <div class="col l-6 m-12 c-12">
     
                             <!-- Content title and Evalue -->
                             <div class="container__title">
@@ -869,7 +869,7 @@
                                         way possible. Thanks !</p>
                                     </div>
                                 </div>
-                              </div>
+                            </div>
 
                               <div class="content__addReview">
                                   <p>Add a review</p>
@@ -878,23 +878,13 @@
                                     </p>
                                     <div class="content__addReview--rating">
                                         <p>Your rating</p>
-                                        <ul>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
+                                        <div id="rating_bar"> 
+                                            <span id="rate_1"></span>
+                                            <span id="rate_2"></span>
+                                            <span id="rate_3"></span>
+                                            <span id="rate_4"></span>
+                                            <span id="rate_5"></span>
+                                        </div>
                                     </div>
                                     <label for="yourReview">Your review *</label>
                                     <textarea name="yourReview" id="yourReview" cols="6" rows="3" style="width:100%"></textarea>
@@ -902,7 +892,7 @@
                                     <input type="text" id="nameReview">
                                     <label for="emailReview">Email *</label>
                                     <input type="email" name="emailReview" id="emailReview">
-                                    <input type="checkbox" checked>
+                                    <input type="checkbox">
                                     <p>Save my name, email, and website 
                                     in this browser for the next time I comment.</p>
                                     <button type="submit">SUBMIT</button>
@@ -916,36 +906,42 @@
                         <h2 class="heading" >Related products</h2>
                         <div class="row">
 
-                            <div class="col l-3">
+                            <div class="col l-3 m-6 p-15 t-6 c-12">
                                 <div class="container__product">
-                                    <img src="./image/shop-5,600x600.jpg" alt="">
+                                    <div class="container__image">
+                                        <img src="./image/shop-5,600x600.jpg" alt="Ảnh 1" class="img__sale">
+                                    </div>
                                     <h2>Jamaica</h2>
                                     <h6>$1,000.00 - $2,000.00</h6>
                                     <a href="#">SELECT OPTIONS</a>
                                 </div>
                             </div>
 
-                            <div class="col l-3">
+                            <div class="col l-3 m-6 p-15 t-6 c-12">
                                 <div class="container__product">
-                                    <img src="./image/shop-1(600X600).jpg" alt="">
+                                    <img src="./image/shop-1(600X600).jpg" alt="Ảnh 2">
                                     <h2>Hawaii Coast</h2>
                                      <h6> <del>$1,000.00</del>  <span class="line">$800.00</span></h6>
                                     <a href="#">ADD TO CART</a>
                                 </div>
                             </div>
 
-                            <div class="col l-3">
+                            <div class="col l-3 m-6 p-15 t-6 c-12">
                                 <div class="container__product">
-                                    <img src="./image/shop-7,600x600.jpg" alt="">
+                                    <div class="container__image">
+                                        <img src="./image/shop-7,600x600.jpg" alt="Ảnh 3" class="img__sale">
+                                    </div>
                                     <h2>Phuket</h2>
                                     <h6>$1,000.00 - $2,000.00</h6>
                                     <a href="#">SELECT OPTIONS</a>
                                 </div>
                             </div>
 
-                            <div class="col l-3">
+                            <div class="col l-3 m-6 p-15 t-6 c-12">
                                 <div class="container__product">
-                                    <img src="./image/shop-8-place.jpg" alt="">
+                                    <div class="container__image">
+                                        <img src="./image/image-product-4.jpg" alt="Ảnh 4" class="img__sale">
+                                    </div>
                                     <h2>Polynesia</h2>
                                     <h6>$1,600.00</h6>
                                     <a href="#">ADD TO CART</a>

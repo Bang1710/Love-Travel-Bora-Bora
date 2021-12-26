@@ -63,3 +63,10 @@ button {
 	text-align: center;
 }
 
+.p-40 {
+	padding-bottom: 40px;
+}
+
+.p-15 {
+	padding-bottom: 15px;
+}
