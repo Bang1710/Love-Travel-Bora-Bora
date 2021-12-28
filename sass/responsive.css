@@ -65,6 +65,63 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container__potrait--title {
+    padding: 80px 230px;
+  }
+  .container__person--items h2 {
+    font-size: 2.2rem;
+  }
+  .container__contact--nd .grid.wide {
+    width: 900px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container__potrait--title {
+    padding: 80px 100px;
+  }
+  .container__person {
+    height: 1300px;
+  }
+  .container__person--list {
+    top: -6%;
+  }
+  .container__person--items {
+    padding-bottom: 20px;
+  }
+  .container__person--items img {
+    height: 400px;
+  }
+  .container__contact {
+    height: 1200px;
+  }
+  .container__contact--nd .grid.wide {
+    width: 700px;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+  .container__potrait--title {
+    padding: 80px 50px;
+  }
+  .container__person--items img {
+    height: 600px;
+  }
+  .container__person {
+    height: 3250px;
+  }
+  .container__person--list {
+    top: -3%;
+  }
+  .container__person--items {
+    padding-bottom: 20px;
+  }
+  .container__contact {
+    height: 1200px;
+  }
+  .container__contact--nd .grid.wide {
+    width: 550px;
+  }
+}
 @media (max-width: 739px) {
   .container__shopMain {
     padding-bottom: 5px;
@@ -110,7 +167,7 @@
     max-width: 50%;
   }
 }
-@media (max-width: 599px) {
+@media (min-width: 375px) and (max-width: 599px) {
   .container__nav section {
     padding: 0 10px;
   }
@@ -153,6 +210,37 @@
   .container__people input {
     display: none;
   }
+  .container__potrait--title {
+    padding: 80px 5px;
+  }
+  .container__person--items img {
+    height: 370px;
+  }
+  .container__person {
+    height: 2500px;
+  }
+  .container__person--list {
+    top: -2%;
+  }
+  .container__person--items {
+    padding-bottom: 20px;
+  }
+  .container__contact {
+    height: 1100px;
+  }
+  .container__contact--nd .grid.wide {
+    width: 320px;
+  }
+  .container__contact--form {
+    padding: 10px 5px;
+  }
+  .container__contact--form .c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container__contact--fill input[type=submit] {
+    width: 50%;
+  }
 }
 @media (min-width: 400px) and (max-width: 599px) {
   .container__priceFor span::before {
@@ -181,6 +269,46 @@
   }
   .container__list--product .heading {
     padding-left: 20px;
+  }
+}
+@media (max-width: 374px) {
+  .container__potrait--title {
+    padding: 80px 5px;
+  }
+  .container__potrait--title h2 {
+    font-size: 4.2rem;
+  }
+  .container__potrait--title p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .container__person--items img {
+    height: 300px;
+  }
+  .container__person {
+    height: 2300px;
+  }
+  .container__person--list {
+    top: -2%;
+  }
+  .container__person--items {
+    padding-bottom: 20px;
+  }
+  .container__contact {
+    height: 1100px;
+  }
+  .container__contact--nd .grid.wide {
+    width: 260px;
+  }
+  .container__contact--form {
+    padding: 10px 5px;
+  }
+  .container__contact--form .c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container__contact--fill input[type=submit] {
+    width: 50%;
   }
 }
 

@@ -1082,7 +1082,7 @@
   top: 4%;
   right: 4%;
   z-index: 1;
-  background-color: #1BBC9B;
+  background-color: #1bbc9b;
   padding: 4px 8px;
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -1125,8 +1125,254 @@
   border-radius: 4px;
 }
 .container__list--product a:hover {
-  background-color: #1BBC9B;
+  background-color: #1bbc9b;
   color: #ffffff;
+}
+.container__detail {
+  padding-bottom: 50px;
+}
+.container__testimonials, .container__contact {
+  background-image: url(../image/slider__2.jfif);
+  width: 100%;
+  height: 515px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.container__overplay {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.container__potrait, .container__contact--nd {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.container__potrait--title, .container__contact--nd--title {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px 300px;
+  text-align: center;
+}
+.container__potrait--title h2, .container__contact--nd--title h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 5rem;
+  color: #ffffff;
+}
+.container__potrait--title p, .container__contact--nd--title p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+.container__potrait--title a, .container__contact--nd--title a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  padding: 15px 35px;
+  border-radius: 30px;
+  background-color: #14b9d5;
+  color: #ffffff;
+}
+.container__person {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.container__person--list {
+  position: absolute;
+  z-index: 2;
+  top: -10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.container__person--items {
+  text-align: center;
+}
+.container__person--items img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.container__person--items h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  color: #555555;
+}
+.container__person--items h4 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  line-height: 1.2rem;
+  color: #9a9a9a;
+  padding-top: 10px;
+}
+.container__person--items p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+}
+.container__person--items a {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+  padding: 8px 12px;
+  border-radius: 30px;
+  background-color: #1bbc9b;
+  color: #ffffff;
+}
+.container__heading {
+  padding-bottom: 30px;
+}
+.container__heading h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1.4rem;
+  color: #9a9a9a;
+  text-align: center;
+}
+.container__heading h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 3.6rem;
+  color: #555555;
+  text-align: center;
+}
+.container__heading h3 span {
+  position: relative;
+}
+.container__heading h3 span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  bottom: 12px;
+  background-color: #1bbc9b;
+  z-index: -1;
+}
+.container__contact {
+  background-image: url(../image/slider__contact.jpg);
+  width: 100%;
+  height: 785px;
+}
+.container__contact--nd {
+  display: flex;
+  align-items: center;
+}
+.container__contact--nd .grid.wide {
+  width: 1000px;
+}
+.container__contact--form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+.container__contact--info, .container__contact--fill {
+  padding: 20px 0;
+}
+.container__contact--info a.link, .container__contact--fill a.link {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1.1rem;
+  color: #ffffff;
+  background-color: #dd9933;
+}
+.container__contact--info h2, .container__contact--fill h2 {
+  padding-top: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  color: #555555;
+}
+.container__contact--info p, .container__contact--fill p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+}
+.container__contact--info ul, .container__contact--fill ul {
+  list-style: none;
+}
+.container__contact--info ul li, .container__contact--fill ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.container__contact--info ul li h5,
+.container__contact--info ul li span, .container__contact--fill ul li h5,
+.container__contact--fill ul li span {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #555555;
+}
+.container__contact--info ul li span, .container__contact--fill ul li span {
+  color: #9a9a9a;
+}
+.container__contact--info ul li:last-child, .container__contact--fill ul li:last-child {
+  border-bottom: none;
+}
+.container__contact--fill label {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2.7rem;
+  color: #9a9a9a;
+}
+.container__contact--fill input,
+.container__contact--fill textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  color: #a3a3a3;
+}
+.container__contact--fill input[type=submit] {
+  font-size: 15px;
+  background-color: #14b9d5;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 25%;
+  float: right;
+  cursor: pointer;
 }
 
 .header, .header__navbar, .header__navbar-level1-items, .header__navbar-level2-items {
@@ -1176,7 +1422,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 50px;
 }
 .footer__img {
   width: 100%;

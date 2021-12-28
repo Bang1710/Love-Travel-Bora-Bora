@@ -84,6 +84,82 @@
 
 // -------------------Container----------------
 .container {
+	@media (min-width: 1024px) and (max-width:1279px){
+		&__potrait--title {
+			padding: 80px 230px;
+		}
+
+		&__person--items h2 {
+			font-size: 2.2rem;
+		}
+
+		&__contact--nd {
+			.grid.wide {
+				width: 900px;
+			}
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+		&__potrait--title {
+			padding: 80px 100px;
+		}
+
+		&__person {
+			height: 1300px;
+
+			&--list {
+				top: -6%;
+			}
+
+			&--items {
+				padding-bottom: 20px;
+			}
+		}
+
+		&__person--items img {
+			height: 400px;
+		}
+
+		&__contact {
+			height: 1200px;
+
+			&--nd .grid.wide {
+				width: 700px;
+			}
+		}
+	} 
+
+	@media (min-width: 600px) and (max-width: 767px) {
+		&__potrait--title{
+			padding: 80px 50px;
+		}
+
+		&__person--items img {
+			height: 600px;
+		}
+
+		&__person {
+			height: 3250px;
+
+			&--list {
+				top: -3%;
+			}
+
+			&--items {
+				padding-bottom: 20px;
+			}
+		}
+
+		&__contact {
+			height: 1200px;
+
+			&--nd .grid.wide {
+				width: 550px;
+			}
+		}
+	}
+
 	@media (max-width: 739px) {
 		&__shopMain {
 			padding-bottom: 5px;
@@ -144,7 +220,7 @@
 		}
 	}
 
-	@media (max-width: 599px) {
+	@media (min-width:375px) and (max-width: 599px) {
 		&__nav {
 			section {
 				padding: 0 10px;
@@ -201,6 +277,46 @@
 				display: none;
 			}
 		}
+
+		&__potrait--title{
+			padding: 80px 5px;
+		}
+
+		&__person--items img {
+			height: 370px;
+		}
+
+		&__person {
+			height: 2500px;
+
+			&--list {
+				top: -2%;
+			}
+
+			&--items {
+				padding-bottom: 20px;
+			}
+		}
+
+		&__contact {
+			height: 1100px;
+
+			&--nd .grid.wide {
+				width: 320px;
+			}
+
+			&--form {
+				padding: 10px 5px;
+				.c-12 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+
+			&--fill input[type='submit'] {
+				width: 50%;
+			}
+		}
 	}
 
 	@media (min-width: 400px) and (max-width: 599px) {
@@ -247,6 +363,57 @@
 		&__list--product {
 			.heading {
 				padding-left: 20px;
+			}
+		}
+	}
+
+	@media (max-width:374px) {
+		&__potrait--title{
+			padding: 80px 5px;
+
+			h2 {
+				font-size: 4.2rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+    			letter-spacing: 2px;
+			}
+		}
+
+		&__person--items img {
+			height: 300px;
+		}
+
+		&__person {
+			height: 2300px;
+
+			&--list {
+				top: -2%;
+			}
+
+			&--items {
+				padding-bottom: 20px;
+			}
+		}
+
+		&__contact {
+			height: 1100px;
+
+			&--nd .grid.wide {
+				width: 260px;
+			}
+
+			&--form {
+				padding: 10px 5px;
+				.c-12 {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+
+			&--fill input[type='submit'] {
+				width: 50%;
 			}
 		}
 	}
